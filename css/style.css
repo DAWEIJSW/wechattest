@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+
+}
+.topbar{
+    /* border:1px solider black; */
+    background-color: #333;
+    height: 40px;
+}
+.container{
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    width: 1226px;
+}
+.container::before,.container::after{
+    content:"";
+    display: table;
+}
+/* 伪元素 清除浮动 */
+.container::after{
+    clear:both;
+}
+.topbar a{
+    color: #b0b0b0;
+    font-size:12px;
+}
+.topbar a:hover{
+    color:#fff;
+}
+.topbar-nav{
+    float: left;
+}
+.topbar-info,.topbar-cart{
+    float: right;
+}
